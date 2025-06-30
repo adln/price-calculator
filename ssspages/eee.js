@@ -135,7 +135,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    <div className="min-h-[90vh] bg-gray-100 py-0 flex flex-col justify-center sm:py-5">
       <Head>
         <title>Product Cost Calculator</title>
         <meta name="description" content="Calculate product costs and pricing" />
@@ -144,9 +144,9 @@ export default function Home() {
 
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-light-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
-        <Card className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-          <CardHeader>
-            <div className="flex justify-center mb-8">
+        <Card className="relative px-4 py-0 bg-white shadow-lg sm:rounded-3xl sm:p-20 sm:py-10">
+          <CardHeader className="py-3">
+            <div className="flex justify-center mb-0">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-dark-vxXHSU94HpO7wn7xgpgFf68cUlQqZt.png"
                 alt="GH SOFT Logo"
@@ -154,7 +154,7 @@ export default function Home() {
                 height={80}
               />
             </div>
-            <CardTitle className="text-2xl font-semibold text-center">Product Cost Calculator</CardTitle>
+            <CardTitle className="text-2xl font-semibold text-center">Calculateur cout de produit</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap -mx-2">
@@ -172,12 +172,12 @@ export default function Home() {
           <CardFooter className="flex flex-col space-y-4">
             <Card className="w-full bg-blue-600 text-white">
               <CardContent className="p-4">
-                <h2 className="text-xl font-semibold">Real Cost: {results.coutReel.toLocaleString()} DA</h2>
+                <h2 className="text-xl font-semibold">Cout réel: {results.coutReel.toLocaleString()} DA</h2>
               </CardContent>
             </Card>
             <Card className="w-full bg-green-600 text-white">
               <CardContent className="p-4">
-                <h2 className="text-xl font-semibold">Selling Price: {results.prixVente.toLocaleString()} DA</h2>
+                <h2 className="text-xl font-semibold">Prix de vente: {results.prixVente.toLocaleString()} DA</h2>
               </CardContent>
             </Card>
           </CardFooter>

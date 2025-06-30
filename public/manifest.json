@@ -1,0 +1,29 @@
+{
+  "short_name": "CPC",
+  "name": "Product Cost Calculator - GH Soft",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots":[
+    {
+      "form_factor": "narrow",
+      "label": "Screenshot mobile",
+      "src": "/screenshot-mobile.png",
+      "sizes": "827x1791",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

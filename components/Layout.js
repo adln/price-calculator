@@ -1,7 +1,12 @@
 import React from 'react'
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
   return (
-    <div>{children}</div>
+    <html>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
+    </html>
   )
 }
