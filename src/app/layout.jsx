@@ -1,5 +1,6 @@
 import '../../styles/globals.css'
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/next"
 import React from 'react';
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function Layout({ children }) {
       <body>
         {children}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
